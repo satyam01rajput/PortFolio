@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .first {
+            height: 100vh;
+            width: 100%;
+            background-image: url("adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 45px;
+            padding-left: 15px;
+            padding-right: 20px;
+           
+        }
+
+
+        .logo {
+            color: white;
+            font-size: 35px;
+            initial-letter: 1px;
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 25px;
+
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+
+
+        }
+
+        nav ul li a:hover {
+            color: red;
+            transition: .4s;
+
+        }
+
+        .sec {
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+        }
+
+        .sec:hover {
+            transform: scale(1.2);
+        }
+
+        .content {
+            position: absolute;
+            top: 200px;
+            left: 30px;
+
+        }
+
+        h1 {
+            color: white;
+            margin: 10px 0px 10px;
+            font-size: 60px;
+        }
+
+        h3 {
+            color: white;
+            margin: 10px 0px 10px;
+            font-size: 30px;
+        }
+
+        h4 {
+            color: white;
+            margin: 10px 0px 10px;
+            font-size: 20px;
+        }
+
+        .formfill form {
+            width: 380px;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .formfill form input:first-child {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 130px 14px 15px;
+            border: 2px solid red;
+            outline: none;
+            border-radius: 30px;
+        }
+
+        .formfill form input:last-child {
+            position: absolute;
+            display: inline-block;
+            outline: none;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: red;
+            color: white;
+            box-shadow: 0px 0px 5px black;
+            top: 6px;
+            right: 6px;
+        }
+
+        .second {
+            height: 100vh;
+            width: 100%;
+            background-image: url("adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+           /* background-attachment: fixed; */
+
+
+        }
+
+        .section12 {
+            padding-top: 20px;
+            padding-left: 650px;
+
+        }
+
+        h4 {
+            letter-spacing: 2px;
+
+        }
+
+        .second2 {
+
+            padding-left: 20px;
+
+        }
+
+        .third {
+            height: 100vh;
+            width: 100%;
+            background-image: url("adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        .arrange {
+            padding-top: 10px;
+        }
+
+        .education {
+            padding-left: 8px;
+            color: white;
+
+        }
+
+        .graduation1 {
+            color: white;
+            padding-left: 500px;
+
+
+
+        }
+
+        .school {
+            padding-left: 8px;
+            color: white;
+        }
+
+        .school12 {
+            color: white;
+            padding-left: 500px;
+        }
+
+        #contact {
+            height: 100vh;
+            width: 100%;
+            background-image: url("adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-right: 15px;
+
+
+
+        }
+
+        .contact-left {
+            color: white;
+            margin-top: 40px;
+
+        }
+
+
+        .contact-left p i {
+            color: white;
+            margin-right: 15px;
+            font-size: 25px;
+        }
+
+
+        .socialicon a {
+            color: white;
+            margin-right: 20px;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 30px;
+
+
+
+        }
+
+        .socialicon a:hover {
+            color: red;
+            transition: 4s;
+
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-right form {
+            width: 100%;
+            padding-top: 50px;
+
+        }
+
+         .newline .new1  {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            margin: 15px 0;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 15px;
+            border-radius: 6px;
+        }
+        .newline .new2  {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            margin: 15px 0;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 15px;
+            border-radius: 6px;
+        }
+
+        .copyright {
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 16px 0;
+            background: #262626;
+            margin-top: 85px;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="first">
+        <nav>
+            <h2 class="logo">Port<span>Folio</span></h2>
+
+
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact us</a></li> <br /><br /><br />
+                <pre
+                    align="center"> <a href="https://www.linkedin.com/in/satyam-rajput-83a739195/"><i class="fa-brands fa-linkedin fa-bounce fa-lg" style="color: #ffffff;"></i></a>     <a href="https://www.instagram.com/satya_sr_rajput_/"><i class="fa-brands fa-instagram fa-bounce fa-lg" style="color: #ffffff;"></i></a>     <a href="#"><i class="fa-brands fa-twitter fa-bounce fa-lg" style="color: #ffffff;"></i></a>     <a href="https://www.facebook.com/profile.php?id=100083125956883"><i class="fa-brands fa-facebook fa-bounce fa-lg" style="color: #ffffff;"></i></a>    <a href=""><i class="fa-brands fa-telegram fa-bounce fa-lg" style="color: white;"></i></a></pre>
+
+            </ul>
+            <a href="#" class="sec">Subscribe</a>
+
+        </nav>
+    </div>
+
+
+
+    <div class="content">
+
+        <h4>Hello, My name is</h4>
+        <h1>Satyam <span>Rajput</span></h1>
+        <h3>I'am a Web Developer.</h3><br />
+
+        <div class="formfill">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Please Enter Your Email" />
+                <input type="submit" name="submit" value="Let's Start" />
+            </form>
+        </div>
+    </div>
+      
+     
+
+
+    <div class="second">
+
+        <div class=" section12">
+            <h1>About <span>me</span></h1>
+            <h3>Developer <span>& designer</span></h3> <br />
+            <h4>I am a front-end web developer .I can provide clean code <br />and pixel perfect design. I also make the
+                website more & <br />more interactive with web animations. A responsive design <br />makes your website
+                accessible to all users, regardless of<br /> their device.
+            </h4>
+
+
+        </div>
+        <div class="second2">
+
+            <h1><span>S</span>kills</h1><br />
+            <pre> <a href="#" class="sec">HTML</a>   <a href="#" class="sec">CSS</a>   <a href="#" class="sec">Javascript</a></pre>
+            <br /><br />
+            <pre>          <a href="#" class="sec">Java</a>   <a href="#" class="sec">C</a>  </pre> <br /> <br />
+            <pre>                  <a href="#" class="sec">C++</a></pre>
+            </pre>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="third">
+        <div class="arrange">
+            <h1 align="center">Education <span>& Qualification</span></h1>
+        </div>
+        <center> <i class="fa-solid fa-graduation-cap fa-bounce fa-2xl" style="color: #ffffff;"></i> </center> <br />
+
+
+        <div class=" education">
+            <span>Post Graduation (MCA)</span> <i class="fa-solid fa-building-columns fa-beat"></i> <br />
+            University Institute of Technology (UIT-RGPV) Bhopal<br />
+            August 2021 - June 2024 <br /><br />
+            I am persuing in MCA (Master Of Computer Application) from University Institute of Technology ( UIT-RGPV )
+            Bhopal .
+        </div> <br />
+
+        <div class="graduation1">
+
+
+            <span>Graduation (BCA)</span> <i class="fa-solid fa-building-columns fa-beat"></i><br />
+            Devi Ahiliya vishwaviadalaya (DAVV-Indore)<br />
+            July 2019 - July 2021 <br /><br />
+            I completed my graduation from devi ahiliya vishwaviadalaya in 2021. I had scored overall 74.8% ( First
+            Division) in Bachelor
+            of Computer Application .
+        </div> <br />
+
+
+        <div class="school">
+            <span>10<sup>th</sup></span> <i class="fa-solid fa-school fa-beat-fade"></i> <br />
+            Pithampur Public H.S School ( Pithampur) <br />
+            June 2016 - April 2017<br /> <br />
+            I completed my 10 th from Pithampur Public H.S. School in 2017. I had scored 79% (First Division).
+
+        </div> <br /><br>
+
+        <div class="school12">
+            <span>12<sup>th</sup></span> <i class="fa-solid fa-school fa-beat-fade"></i> <br />
+            Pithampur Public H.S School ( Pithampur) <br />
+            June 2018 - April 2019<br /> <br />
+            I completed my 12th from Pithampur Public H.S. School in 2019. I had scored 74% (First Division).
+        </div>
+
+
+    </div>
+
+    <div id="contact">
+        <div class="thin">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Con<span>tact</span> <span>Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>satyam01rajput@gmail.com</p><br /> <br />
+                    <p><i class="fa-solid fa-phone fa-shake"></i>Phone no. 7415391254 , 8989805706 </p> <br /> <br />
+                    <div class="socialicon">
+                        <a href="https://www.linkedin.com/in/satyam-rajput-83a739195/"><i
+                                class="fa-brands fa-linkedin fa-bounce fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="https://www.instagram.com/satya_sr_rajput_/"><i
+                                class="fa-brands fa-instagram fa-bounce fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-bounce fa-lg" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-bounce fa-lg" style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp fa-bounce fa-lg" style="color:white"></i></a>
+                    </div> <br /><br />
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="newline">
+                        <input class="new1" type="text" name="name" value="" placeholder="Enter Your Name Here" required="" />
+                        <input class="new1" type="email" name="email" value="" placeholder="Enter Your Mail id" required="" />
+                        <textarea  class="new2" name="message" rows="5" placeholder=" Your message"></textarea>
+                        <input class="btn" type="submit" value="submit" />
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+
+            <p> <i class="fa-solid fa-copyright"></i> copyright @ Satyam </p>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>          
